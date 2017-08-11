@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Investigación y Desarrollo | SEROFCA</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="shortcut icon" href="imgs/logo.svg" />
+	<link media="none" onload="if(media!='all')media='all'" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
+	<style type="text/css">
+		.socialIcons div{
+			display: flex;
+		}
+		@media (max-width: 699px){/*little screen*/
+			.socialIcons h3.orange{
+				font-size: 12vw;
+				padding-left: 12vw;
+				margin-bottom: 0px;
+				text-align: center;
+				padding: 0;
+			}
+			.socialIcons div{
+				display: flex;
+			}
+			.socialIcons a{
+				flex-grow: 1;
+				color: white;
+				text-align: center;padding: .7em;
+				font-size: 1.2em;
+			}
+			.socialIcons a:nth-child(1){background-color:aqua}
+			.socialIcons a:nth-child(2){background-color:#5691ef}
+			.socialIcons a:nth-child(3){background-color:#da47ff}
+			.socialIcons a:nth-child(4){background-color:aqua}
+			.socialIcons a:nth-child(5){background-color:red}
+		}
+		@media (min-width: 700px){/*big screen*/
+			.socialIcons{
+				display: flex;
+				background-color: rgb(247,147,29);
+				color: white;
+			}
+			.socialIcons h3{
+				margin:0;
+				padding: 2vh;
+				width: 50%;
+				font-size: 6vh;
+			}
+			.socialIcons div{
+				width: 50%;
+				display: flex;
+			}
+			.socialIcons a{
+				padding: 1em;
+				flex-grow: 1;
+				font-size: 6vh;
+				padding:2vh;
+				color: inherit;
+				text-align: center;
+				background-color: rgb(28,117,188);
+			}
+			.socialIcons a:hover:nth-child(1){background-color:aqua}
+			.socialIcons a:hover:nth-child(2){background-color:#5691ef}
+			.socialIcons a:hover:nth-child(3){background-color:#da47ff}
+			.socialIcons a:hover:nth-child(4){background-color:aqua}
+			.socialIcons a:hover:nth-child(5){background-color:red}
+		}
+	</style>
+</head>
+<body>
+	<header id="heading" class="top">
+		<img src="imgs/logo.svg" id="menuIcon">
+		<ul id="deployMenu">
+			<li>
+				<a href="catalogo.html">
+					SEROFCA
+				</a>
+			</li>
+			<li class="innerLink">
+				<a href="#contact">
+					Contáctanos
+				</a>
+			</li>
+		</ul>
+	</header>
+	<section id="cover">
+		<div class="animationContainer">
+			<img src="imgs/logo.svg">
+		</div>
+		<script type="text/javascript">
+			let img = document.querySelector("#cover .animationContainer > img")
+			let container = document.querySelector("#cover .animationContainer")
+			if (window.innerWidth > window.innerHeight) {
+				img.style.height = img.style.width = window.innerHeight + "px"
+			} else {
+				img.style.height = img.style.width = window.innerWidth + "px"
+			}
+			setTimeout(function(argument) {
+				container.style.animationName = "fadeOut"
+			},2000)
+			setTimeout(function(argument) {
+				container.style.display = "none"
+			},3900)
+		</script>
+		<div class="centerDiv">
+			<img src="imgs/logoplain.svg">
+			Investigación y Desarrollo
+		</div>
+	</section>
+	<section id="description">
+		<h1>SEROFCA, de la mano con el progreso.</h1>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</section>
+	<section class="socialIcons">
+		<h3 class="orange">SEROFCA</h3>
+		<div>
+			<a rel="follow" href="http://www.twitter.com/serofca">
+				<i class="fa fa-twitter"></i>
+			</a>
+			<a rel="follow" href="http://www.facebook.com/serofca">
+				<i class="fa fa-facebook"></i>
+			</a>
+			<a rel="follow" href="http://www.instagram.com/serofca">
+				<i class="fa fa-instagram"></i>
+			</a>
+			<a rel="follow" href="http://www.serofca.wordpress.com">
+				<i class="fa fa-wordpress"></i>
+			</a>
+			<a rel="follow" href="https://www.youtube.com/user/serofcatv">
+				<i class="fa fa-youtube"></i>
+			</a>
+		</div>
+	</section>
+	<script type="">
+		(function() {
+			const responsiveSize = 700//px
+			let responsiveMenu = {
+				icon:document.getElementById('menuIcon'),
+				ul:document.getElementById('deployMenu')
+			}
+			responsiveMenu.icon.addEventListener('click',function() {
+				if (window.innerWidth >= responsiveSize)
+					return
+				let style = responsiveMenu.ul.style
+				style.marginLeft = style.marginLeft === "0%" ? "-100%" : "0%" ;
+			})
+			window.addEventListener("resize",function() {
+				if (window.innerWidth >= responsiveSize)
+					responsiveMenu.ul.style.marginLeft = "0%"
+			})
+		})()
+	</script>
+	<main>
+		<section id="noticias">
+			<div class="noticia">
+				<img src="imgs/logo.svg">
+				<div>
+					<h4>Título</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur.</p>
+				</div>
+			</div>
+			<div class="noticia">
+				<img src="imgs/logo.svg">
+				<div>
+					<h4>Título</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur.</p>
+				</div>
+			</div>
+			<div class="noticia">
+				<img src="imgs/logo.svg">
+				<div>
+					<h4>Título</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur.</p>
+				</div>
+			</div>
+			<div class="noticia">
+				<img src="imgs/logo.svg">
+				<div>
+					<h4>Título</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur.</p>
+				</div>
+			</div>
+			<h2><a href="http://www.serofca.wordpress.com">Más Noticias</a></h2>
+		</section>
+		<aside>
+			<div>
+				<h3>📌 Conócenos</h3>
+				<p>
+					El departamento de ITDi de SEROFCA, nace con la finalidad de contribuir en el avance de la Física Médica Moderna en Venezuela, Latinoamérica y el Mundo, con ello se persigue que con la unión de distintas áreas de conocimiento, desde la arquitectura, la ingeniería, la administración, la física, química, biología, matemática y computación, se logre un incremento en la investigación aplicada al ámbito médico desde una perspectiva mucho más integral, así como la utilización e impulso de nuevas tecnologías, el desarrollo de nuevos esquemas de trabajo y formas de comprender  nuestra realidad, para así dar lugar a la innovación en todas las áreas de desarrollo de este departamento.
+				</p>
+			</div>
+			<div>
+				<h3>📌 Misión</h3>
+				<p>
+					Llevar a cabo la planificación, organización, evaluación y publicación de los proyectos que ayudarán en el desarrollo de la investigación científica y tecnológica llevados a cabo en SEROFCA; con el objetivo de impulsar las líneas de investigación definidas por la empresa y generar nuevas líneas que surjan en la interconexión entre dos o más investigaciones de diversas áreas.
+				</p>
+			</div>
+			<div>
+				<h3>📌 Visión</h3>
+				<p>
+					Consolidarnos como departamento modelo en la investigación de ciencia aplicada a nivel nacional, latinoamericano y mundial, distinguiéndonos por la eficiencia, innovación y calidad de las investigaciones, actuando con liderazgo a fin de promover nuevos protocolos, normas y esquemas de trabajo que garanticen la mejora continua de procesos en el área de la Medicina y así colocar a SEROFCA en la vanguardia de conocimientos e innovación.
+				</p>
+			</div>
+			<div>
+				<h3>Links</h3>
+				<ul>
+					<li>
+						<a href="#">#</a>
+					</li>
+
+					<li>
+						<a href="#">#</a>
+					</li>
+
+					<li>
+						<a href="#">#</a>
+					</li>
+
+					<li>
+						<a href="#">#</a>
+					</li>
+				</ul>
+			</div>
+		</aside>
+	</main>
+	<section id="anuncioCursos">
+		<h1>Ofrecemos el Curso de Protección Radiológica de <span class="orange">24 horas</span></h1>
+		<div class="blue">
+			Dirigido a:
+			<h3>Médicos, Técnicos y enfermeras</h3>
+			Diseñado para personal que trabaja con equipos emisores de Radiación Ionizante <br>
+		</div>
+		<img src="imgs/1.jpg">
+		<div class="orange" style="font-size: 1.5em;">
+			Con este curso se cumple lo exigido en la norma COVENIN 218-1 y en la resolución 401 del MPPS
+		</div>
+		<div class="blue" style="font-size: 1.1em;padding-left: 2em;padding-right: 2em">
+			dictado por:
+			<h3>MsCs Omar Arias C.</h3>
+		</div>
+	</section>
+	<section id="lines">
+		<h2>Líneas de Investigación</h2>
+		<ul>
+			<li>
+				<h2>📌Línea 1</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</li>
+			<li>
+				<h2>📌Línea 2</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</li>
+			<li>
+				<h2>📌Línea 3</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</li>
+			<li>
+				<h2>📌Línea 4</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</li>
+			<li>
+				<h2>📌Línea 5</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</li>
+		</ul>
+		<section>
+			<h4>
+				Quieres unirte a una de nuestras líneas de investigación? click <span id="pulse">aquí</span>
+			</h4>
+		</section>
+	</section>
+	<div id="buy">Para Compra de Equipos y Materiales Entra a <a href="http://www.serofca.com">SEROFCA.com</a></div>
+	<footer>
+		<section id="footerStarter">
+			<aside><br><br>
+				<a rel="follow" href="http://www.serofca.com">
+					<b>Responsabilidad Social Empresarial</b>
+					<br>
+					SEROFCA, una mano amiga.
+					<br>
+				</a>
+			</aside><br><br>
+			<aside><br><br>
+				Contamos con la certificación del Ministerio de Salud, para brindar una solución integral en materia de seguridad radiológica.
+			</aside><br><br>
+			<aside><br><br>
+				Nuestro Horario <br>
+				De Lunes a Sabado <br>
+				De 8:30Am a 6:30PM <br>
+				 
+				Emergencias: 24 Horas <br>
+				0414-2500936 / 0424-2011114
+			</aside>
+		</section>
+		<section id="copyright">
+			serofca.com <i class="fa fa-copyright" aria-hidden="true"></i>2023
+		</section>
+		<section id="icons">
+			<a rel="follow" href="http://www.twitter.com/serofca"><i class="fa fa-twitter"></i></a>
+			<a rel="follow" href="http://www.facebook.com/serofca"><i class="fa fa-facebook"></i></a>
+			<a rel="follow" href="http://www.instagram.com/serofca"><i class="fa fa-instagram"></i></a>
+			<a rel="follow" href="http://www.serofca.wordpress.com"><i class="fa fa-wordpress"></i></a>
+			<a rel="follow" href="https://www.youtube.com/user/serofcatv"><i class="fa fa-youtube"></i></a>
+		</section>
+		<section id="design">
+			<a rel="follow" href="https://codepen.io/JhonatanHern">
+				Diseño e implementación: Jhonatan Hernández
+				<i class='fa fa-codepen'></i>
+			</a>
+			<a rel="follow" href="https://github.com/JhonatanHern">
+				<i class='fa fa-github'></i>
+			</a>
+		</section>
+	</footer>
+	<div id="idform">
+		<form>
+			<i id="idBack">X</i>
+			<h3>Tus datos:</h3>
+			<input type="text" name="name" placeholder="nombres" required>
+			<input type="text" name="lastName" placeholder="apellidos" required>
+			<input type="email" name="email" placeholder="correo" required>
+			<input type="text" name="ld" placeholder="Enlace a tu perfil de Linkedin" required>
+			<textarea placeholder="En donde estudiaste? (o en donde estudias)" name="est" required></textarea>
+			<input type="text" name="ld" placeholder="Que estudias" required>
+			<textarea placeholder="Por que quieres trabajar con nosotros?" name="why" required></textarea>
+			<textarea placeholder="Cuales son tus experiencias laborales previas?" name="cv" required></textarea>
+			<textarea placeholder="A cual línea de investigación te quieres unir?" name="line" required></textarea>
+			<input type="submit" value="Enviar">
+		</form>
+	</div>
+	<script type="text/javascript">
+		var lis = Array.from(document.querySelectorAll('#lines li'))
+		lis.forEach(function(e) {
+			e.addEventListener('click',function() {
+				this.classList.toggle('activeLine')
+			})
+		})
+	</script>
+	<script type="text/javascript">
+		let idform = document.getElementById('idform')
+		document.getElementById('pulse').addEventListener('click',function() {
+			idform.style.display = 'block';
+		})
+		document.getElementById('idBack').addEventListener('click',function() {
+			idform.style.display = 'none';
+		})
+	</script>
+</body>
+</html><!--http://www.sncpharma.com/assets/lib/kcfinder/upload/files/libros%20snc/Psicologia%20del%20Color.pdf-->
