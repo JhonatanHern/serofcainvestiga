@@ -254,9 +254,8 @@ body{margin: 0;overflow-x: hidden}
 		margin-top: 0em;
 		margin-bottom: 2em;
 	}
-	#anuncioCursos h1{
-		padding: .6em;
-		text-align: center;
+	#anuncioCursos img{
+		max-height: 40vh;
 	}
 
 	div.orange{
