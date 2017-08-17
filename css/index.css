@@ -281,7 +281,7 @@ body{margin: 0;overflow-x: hidden}
 	#lines li p{display: none;text-align: justify;}
 	#lines li.activeLine{background-color: #1D71B8;color: white;}
 	#lines li.activeLine p{display: block;}
-	#lines li.activeLine h2{font-size: 3em;}
+	#lines li.activeLine h2{font-size: 2em;}
 	#lines li:hover h2{color:rgb(247,147,29);}
 	#lines li:hover{background-color: #1D71B8;color: white;}
 	@media (max-width: 699px){/*little screen*/
