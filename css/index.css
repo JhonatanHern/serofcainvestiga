@@ -8,7 +8,10 @@
 	font-family: 'Century Gothic',sans-serif;
 	max-width: 100vw;
 	box-sizing: border-box;
+	animation: fadeIn 1s;
 }
+@keyframes fadeIn{from{opacity: 0}to{opacity: 1}}
+@-webkit-keyframes fadeIn{from{opacity: 0}to{opacity: 1}}
 body{margin: 0;overflow-x: hidden}
 /*header*/
 	body > header{
@@ -221,14 +224,26 @@ body{margin: 0;overflow-x: hidden}
 			width: 65%;
 			padding: 3em;
 			padding-bottom: 1em;
+			position: relative;
 		}
 		main aside{
 			width: 35%;
 			padding: 1em;
 		}
-		.noticia{display: flex}
-		.noticia > *{flex-grow: 1}
-		.noticia img{height: 30vh}
+		.noticia{
+			position: relative;
+			display: flex;
+			justify-content: space-between;
+			width: 100%;
+			max-height: 40vh;
+		}
+		.noticia > *{
+			width: 49%!important;
+			display: inline-block;
+		}
+		.noticia h4{
+			margin-top: 0;
+		}
 	}
 	#noticias h2{
 		text-align: center;
@@ -253,6 +268,8 @@ body{margin: 0;overflow-x: hidden}
 		display: flex;
 		margin-top: 0em;
 		margin-bottom: 2em;
+		cursor: pointer;
+		align-items: stretch;
 	}
 	#anuncioCursos img{
 		max-height: 40vh;
@@ -277,10 +294,10 @@ body{margin: 0;overflow-x: hidden}
 	#lines > h2{text-align: center;margin-top: .5em;margin-bottom: 0;font-size: 3em;}
 	#lines ul{list-style: none;}
 	#lines li{padding: 1em;margin:0;cursor: pointer;}
-	#lines li h2{margin:0;}
-	#lines li p{display: none;text-align: justify;}
+	#lines li h2{margin:0;margin-bottom: .3em;}
+	#lines > ul > li > div{display: none;text-align: justify;}
 	#lines li.activeLine{background-color: #1D71B8;color: white;}
-	#lines li.activeLine p{display: block;}
+	#lines li.activeLine *{display: block;}
 	#lines li.activeLine h2{font-size: 1.8em;}
 	#lines li:hover h2{color:rgb(247,147,29);}
 	#lines li:hover{background-color: #1D71B8;color: white;}
@@ -381,7 +398,7 @@ body > footer #design{
 	#pulse:hover{
 		font-size: 2em;
 	}
-	#idform{
+	#idform,#formCurso{
 		display: none;
 		position: fixed;
 		height: 100vh;
@@ -395,7 +412,7 @@ body > footer #design{
 	}
 	@keyframes fadeIn{from{opacity: 0}to{opacity: 1}}
 	@-webkit-keyframes fadeIn{from{opacity: 0}to{opacity: 1}}
-	#idform form{
+	#idform form,#formCurso form{
 		position:absolute;
 		top:50%;
 		left:50%;
@@ -408,11 +425,11 @@ body > footer #design{
 		overflow-y:auto;
 		max-height: 90vh;
 	}
-	#idform form > *{
+	#idform form > *,#formCurso form > *{
 		min-width: 50vw;
 		margin-bottom: 1em;
 	}
-	#idform #idBack{
+	#idform #idBack,#formCurso #idBack2{
 		box-shadow: 5px 5px 5px gray;
 		height: 2em;
 		width: 2em;
@@ -426,6 +443,7 @@ body > footer #design{
 		background-color: black;
 		color:white;
 		font-weight: bold;
+		cursor: pointer;
 	}
 	@media(max-width:699px){/*little */
 		#idform form > *{
