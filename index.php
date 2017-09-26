@@ -3,6 +3,7 @@
 <head>
 	<title>Investigación y Desarrollo | SEROFCA</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="shortcut icon" href="imgs/logo.svg" />
 	<link media="none" onload="if(media!='all')media='all'" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -67,6 +68,53 @@
 	</style>
 </head>
 <body>
+	<?php 
+		error_reporting(0);
+		ini_set('display_errors', 0);
+		if( $_GET['courseType'] ){//Es aspirante a curso
+			$to        = 'sistemas.serofca@gmail.com';
+			$subject   = 'Interesado en el curso - SEROFCA';
+			$name      = $_GET['name'].' '.$_GET['lastName'];
+			$email     = $_GET['mail'];
+			$empresa   = $_GET['org'];
+			$cel       = $_GET['phone'];
+			$msg       = $_GET['msg'];
+			$ci        = $_GET['CI'];
+			$tipoClase = $_GET['courseType'];
+
+			$message = "de: $name ($email)\nCI: $ci\n$cel\n\nSolicita clase de tipo: $tipoClase";
+			$headers = 'From: notificaciones@serofca.com' . "\r\n" .
+				'Reply-To: notificaciones@serofca.com' . "\r\n" .
+				'X-Mailer: PHP/' . phpversion();
+
+			mail($to, $subject, $message, $headers);
+			echo '<script>alert("Mensaje Enviado")</script>';
+		}else if( $_GET['name'] ){
+			$to      = 'sistemas.serofca@gmail.com';
+			$subject = 'Aspirante a integrar líneas de investigación';
+			$name    = $_GET['name'].' '.$_GET['lastName'];
+			$email   = $_GET['mail'];
+			$cel     = $_GET['cel'];
+			$msg     = $_GET['msg'];
+			$ld      = $_GET['ld'];
+			$carrera = $_GET['carrera'];
+			$est     = $_GET['est'];
+			$why     = $_GET['why'];
+			$cv      = $_GET['cv'];
+			$line    = $_GET['line'];
+				
+			$message = "de: $name ($email)\n Perfil de Linkedin: $ld\nEstudió $carrera en: $est\n".
+				"\nquiere trabajar con nosotros por:\n$why\n\nSu currículum:\n$cv\n\n".
+				"Se quiere unir a: $line";
+
+			$headers = 'From: notificaciones@serofca.com' . "\r\n" .
+				'Reply-To: notificaciones@serofca.com' . "\r\n" .
+				'X-Mailer: PHP/' . phpversion();
+
+			mail($to, $subject, $message, $headers);
+			echo '<script>alert("Mensaje Enviado")</script>';
+		}
+	?>
 	<header id="heading" class="top">
 		<img src="imgs/logo.svg" id="menuIcon">
 		<ul id="deployMenu">
@@ -462,9 +510,10 @@
 			<input type="text" name="name" placeholder="nombres" required>
 			<input type="text" name="lastName" placeholder="apellidos" required>
 			<input type="email" name="email" placeholder="correo" required>
+			<input type="text" name="cel" placeholder="Número celular" required>
 			<input type="text" name="ld" placeholder="Enlace a tu perfil de Linkedin" required>
 			<textarea placeholder="En donde estudiaste? (o en donde estudias)" name="est" required></textarea>
-			<input type="text" name="ld" placeholder="Que estudias" required>
+			<input type="text" name="carrera" placeholder="Que estudias" required>
 			<textarea placeholder="Por que quieres trabajar con nosotros?" name="why" required></textarea>
 			<textarea placeholder="Cuales son tus experiencias laborales previas?" name="cv" required></textarea>
 			<textarea placeholder="A cual línea de investigación te quieres unir?" name="line" required></textarea>
