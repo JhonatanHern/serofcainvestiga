@@ -1,0 +1,58 @@
+.j-animate{
+	opacity: 0;
+	transition-duration: 0;
+}
+.j-animated{
+	transition-duration: 1s;
+	opacity: 1;
+	animation-duration: 1s;
+	animation-name: bounceInLeft;
+	animation-timing-function: linear;
+	animation-delay: 0s;
+}
+.j-animated.j-right{
+	animation-name: bounceInRight;
+}
+@keyframes fadeIn{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+
+@keyframes bounceInLeft {
+	0% {
+		opacity: 0;
+		transform: translateX(-100vw);
+	}
+	60% {
+		opacity: 1;
+		transform: translateX(25px);
+	}
+	75% {
+		transform: translateX(-10px);
+	}
+	90% {
+		transform: translateX(5px);
+	}
+	to {
+		transform: none;
+	}
+}
+@keyframes bounceInRight {
+	from {
+		opacity: 0;
+		transform: translateX(100vw);
+	}
+	60% {
+		opacity: 1;
+		transform: translateX(-25px);
+	}
+	75% {
+		transform: translateX(10px);
+	}
+	90% {
+		transform: translateX(-5px);
+	}
+	to {
+		transform: none;
+	}
+}
