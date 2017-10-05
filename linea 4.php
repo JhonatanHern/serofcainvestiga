@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<title>Linea 4</title>
@@ -7,7 +7,7 @@
 	<link rel="shortcut icon" href="imgs/logo.svg" />
 	<link rel="stylesheet" type="text/css" href="css/j-animation.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
-	<?php include 'lincss.php'; ?>
+	<link rel="stylesheet" type="text/css" href="css/lineas.css">
 </head>
 <body>
 	<div id="cover">
