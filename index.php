@@ -302,6 +302,7 @@
 						</li>
 						<li>
 							1.2) Programas screaning.
+							<br><a href="Linea 1.php">Ver mas</a>
 						</li>
 					</ul>
 				</div>
@@ -327,6 +328,7 @@
 						</li>
 						<li>
 							2.5) Optimización de la práctica de radioterapia.
+							<br><a href="Linea 2.php">Ver mas</a>
 						</li>
 					</ul>
 				</div>
@@ -346,6 +348,7 @@
 						</li>
 						<li>
 							3.3) Generación e implementación de métodos de análisis de riesgo.
+							<br><a href="Linea 3.php">Ver mas</a>
 						</li>
 					</ul>
 				</div>
@@ -361,6 +364,7 @@
 						</li>
 						<li>
 							4.2) Estandarización de técnicas para el registro de datos dosimétricos.
+							<br><a href="Linea 4.php">Ver mas</a>
 						</li>
 					</ul>
 				</div>
@@ -383,6 +387,7 @@
 						</li>
 						<li>
 							5.4) Evaluación de sistemas de seguridad de los equipos emisores de radiación ionizante.
+							<br><a href="Linea 5.php">Ver mas</a>
 						</li>
 					</ul>
 				</div>
@@ -420,6 +425,7 @@
 						</li>
 						<li>
 							6.9) Red hospitalaria para el teleradiodiagnóstico.
+							<br><a href="Linea 6.php">Ver mas</a>
 						</li>
 					</ul>
 				</div>
@@ -442,6 +448,7 @@
 						</li>
 						<li>
 							7.4) Actualización de normas nacionales.
+							<br><a href="Linea 7.php">Ver mas</a>
 						</li>
 					</ul>
 				</div>
@@ -452,6 +459,7 @@
 				</h2>
 				<div>
 					El avance de la tecnología va de la mano de los estudios de investigación realizados en las áreas de actuación de una empresa, industria o sociedad, las ciencias básicas han sido el pilar fundamental para el desarrollo, ya que provee los conocimientos necesarios para la evolución y crecimiento de sociedades. Es por ello que SEROFCA desarrolla un área destinada a la investigación de ciencias como la física, la química, la biología y la computación, y estas en su subareas como la biofísica, la bioquímica, inteligencia artificial, estudios estadísticos y computacionales, a fin de estar en la vanguardia ye en sintonía con los avances mundiales en materia de protección radiológica, radioterapia, radiodiagnóstico y medicina nuclear.
+					<br><a href="Linea 8.php">Ver mas</a>
 				</div>
 			</li>
 		</ul>
