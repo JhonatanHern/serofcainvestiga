@@ -17,7 +17,7 @@
 		La poca educación del personal profesional ha traído como consecuencia que el énfasis en la educación en PR haya sido, enfocado en el trabajador expuesto, por lo que la PR del paciente requiere, por lo tanto, un mayor énfasis y un mayor foco en los médicos radiólogos y los técnicos en radiología, ya que ellos son finalmente los principales responsables de la dosis individual que se entrega, la educación en protección radiológica sigue estando centrada en el área ocupacional, no siendo el paciente el foco de atención. El departamento de ITDi SEROFCA propone:
 	</div>
 		<figure>
-			<img src="imgs/logoplain.svg">
+			<img src="l/3.jpg">
 		<figcaption>A rabid unicorn goring a fairy.</figcaption>
 	</figure>
 	<h2>3.1 Generación de planes de formación y capacitación en protección radiológica para:</h2>

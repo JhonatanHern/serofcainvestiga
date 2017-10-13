@@ -17,7 +17,7 @@
 		La optimización de las dosis de radiación debe establecerse según el principio ALARA o As Low As Reasonably Achievable o Tan bajo como sea razonablemente posible, que explica que se deben tomar las medidas necesarias a fin de reducir la dosis hasta que el riesgo de cualquier medida sea mayor que el valor de la reducción del detrimento para la salud que con ella se consiga, para ello de debe adecuar la dosis de radiación a cada paciente y de acuerdo al objetivo clínico que se desea investigar, esto implica que existan grandes diferencias en términos de dosis de radiación entre estudios similares realizados en diferentes centros.
 	</div>
 		<figure>
-			<img src="imgs/logoplain.svg">
+			<img src="l/2.png">
 		<figcaption>A rabid unicorn goring a fairy.</figcaption>
 	</figure>
 	<h2>2.1 Establecimiento de niveles de referencia para el uso de las radiaciones ionizantes en el diagnóstico médico de los pacientes en Venezuela</h2>

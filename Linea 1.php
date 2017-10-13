@@ -17,7 +17,7 @@
 		Es necesario mejorar y facilitar la justificación de la práctica, esta debe incluir conceptos de conciencia, idoneidad y auditoría. Esta problemática es debido al poco conocimiento sobre el impacto de las radiaciones ionizantes sobre los seres vivos, desde los beneficios hasta las consecuencias.
 	</div>
 		<figure>
-			<img src="imgs/logoplain.svg">
+			<img src="l/1.png">
 		<figcaption>A rabid unicorn goring a fairy.</figcaption>
 	</figure>
 	<h2>1.1	Diseño de guías clínicas diagnósticas justificadas para la selección de estudios imagenológicos.:</h2>

@@ -14,7 +14,7 @@
 		<h1>8)	Aplicación de las ciencias básicas en el radiodiagnóstico, radioterapia, protección radiológica y medicina nuclear.</h1>
 	</div>
 	<figure>
-		<img src="imgs/logoplain.svg">
+		<img src="l/8.png">
 		<figcaption>A rabid unicorn goring a fairy.</figcaption>
 	</figure>
 	<p class="j-animate j-right">

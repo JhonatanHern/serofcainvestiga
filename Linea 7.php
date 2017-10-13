@@ -17,7 +17,7 @@
 		La seguridad de paciente y del personal ocupacionalmente expuesto, debe ser una prioridad estratégica en los usos de la radiación ionizante en medicina, por tal motivo es necesario promover la cooperación entre autoridades reguladoras de protección radiológica, autoridades de salud, sociedades profesionales y de paciente, entre las diferentes disciplinas y especialidades involucrada en la práctica radiodiagnóstica. El departamento de ITDi SEROFCA, propone:
 	</p>
 	<figure>
-		<img src="imgs/logoplain.svg">
+		<img src="l/7.png">
 		<figcaption>A rabid unicorn goring a fairy.</figcaption>
 	</figure>
 	<h2>7.1 Desarrollo de guías prácticas para la aplicación de normas.</h2>

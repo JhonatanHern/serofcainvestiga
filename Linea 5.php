@@ -17,7 +17,7 @@
 		Los fabricantes de los equipos de imagenología y radioterapia juegan un rol importante en la seguridad y calidad de la práctica, ya que ellos están, indirectamente, vinculados con la salud del paciente, es por ello, que se hace imprescindible desarrollar mejoras en la seguridad de los dispositivos médicos emisores de radiación, que van desde el diseño físico del equipo, el software y funciones extras, a fin de reducir la exposición de los pacientes a radiación innecesaria, pero manteniendo los estándares de calidad del resultado clínico, protección del paciente y del trabajador expuesto. Se propone:
 	</p>
 	<figure>
-		<img src="imgs/logoplain.svg">
+		<img src="l/5.png">
 		<figcaption>A rabid unicorn goring a fairy.</figcaption>
 	</figure>
 	<h2>5.1 Desarrollo de manuales de procedimientos adaptadas a cada centro donde operen equipos de radiación.</h2>

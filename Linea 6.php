@@ -17,7 +17,7 @@
 		En Venezuela y en Latinoamérica existe poca recopilación de datos y tendencias en las exposiciones médicas que permitan la cooperación o intercambio de información referente a la exposición ocupacional en medicina, medidas de protección radiológica, niveles de dosis, protocolos de tratamiento, que puedan ser utilizados como instrumento de gestión de calidad, análisis de tendencias de diagnóstico y terapéuticas, toma de decisiones y asignación de recursos. ITDi SEROFCA, propone:
 	</p>
 	<figure>
-		<img src="imgs/logoplain.svg">
+		<img src="l/6.png">
 		<figcaption>A rabid unicorn goring a fairy.</figcaption>
 	</figure>
 	<h2>6.1 Fundar una página web con información para pacientes dependiendo del tipo de estudio que se realiza.</h2>
