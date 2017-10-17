@@ -18,7 +18,7 @@
 	</div>
 		<figure>
 			<img src="l/3.jpg">
-		<figcaption>A rabid unicorn goring a fairy.</figcaption>
+		<figcaption></figcaption>
 	</figure>
 	<h2>3.1 Generación de planes de formación y capacitación en protección radiológica para:</h2>
 	<ul>

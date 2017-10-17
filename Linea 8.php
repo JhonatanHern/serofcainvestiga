@@ -15,7 +15,7 @@
 	</div>
 	<figure>
 		<img src="l/8.png">
-		<figcaption>A rabid unicorn goring a fairy.</figcaption>
+		<figcaption></figcaption>
 	</figure>
 	<p class="j-animate j-right">
 		El avance de la tecnología va de la mano de los estudios de investigación realizados en las áreas de actuación de una empresa, industria o sociedad, las ciencias básicas han sido el pilar fundamental para el desarrollo, ya que provee los conocimientos necesarios para la evolución y crecimiento de sociedades. Es por ello que SEROFCA desarrolla un área destinada a la investigación de ciencias como la física, la química, la biología y la computación, y estas en su sub-áreas como la biofísica, la bioquímica, inteligencia artificial, estudios estadísticos y computacionales, a fin de estar en la vanguardia ye en sintonía con los avances mundiales en materia de protección radiológica, radioterapia, radiodiagnóstico y medicina nuclear.

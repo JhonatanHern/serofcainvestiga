@@ -18,7 +18,7 @@
 	</div>
 		<figure>
 			<img src="l/2.png">
-		<figcaption>A rabid unicorn goring a fairy.</figcaption>
+		<figcaption></figcaption>
 	</figure>
 	<h2>2.1 Establecimiento de niveles de referencia para el uso de las radiaciones ionizantes en el diagnóstico médico de los pacientes en Venezuela</h2>
 	<ul>

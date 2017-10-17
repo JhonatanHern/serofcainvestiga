@@ -17,7 +17,7 @@
 	</p>
 	<figure>
 		<img src="l/4.png">
-		<figcaption>A rabid unicorn goring a fairy.</figcaption>
+		<figcaption></figcaption>
 	</figure>
 	<h2>4.1 Simulaciones de dosis empleando métodos de MonteCarlo.</h2>
 	<ul>

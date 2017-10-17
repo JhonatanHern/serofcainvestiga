@@ -18,7 +18,7 @@
 	</p>
 	<figure>
 		<img src="l/7.png">
-		<figcaption>A rabid unicorn goring a fairy.</figcaption>
+		<figcaption></figcaption>
 	</figure>
 	<h2>7.1 Desarrollo de guías prácticas para la aplicación de normas.</h2>
 	<h2>7.2 Propuestas de normas nacionales de calidad en el diagnóstico médico.</h2>

@@ -18,7 +18,7 @@
 	</p>
 	<figure>
 		<img src="l/6.png">
-		<figcaption>A rabid unicorn goring a fairy.</figcaption>
+		<figcaption></figcaption>
 	</figure>
 	<h2>6.1 Fundar una página web con información para pacientes dependiendo del tipo de estudio que se realiza.</h2>
 	<h2>6.2 Creación de software para evaluación de técnicas radiológicas y dosis en pacientes.</h2>

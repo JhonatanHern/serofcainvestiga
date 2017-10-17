@@ -18,7 +18,7 @@
 	</p>
 	<figure>
 		<img src="l/5.png">
-		<figcaption>A rabid unicorn goring a fairy.</figcaption>
+		<figcaption></figcaption>
 	</figure>
 	<h2>5.1 Desarrollo de manuales de procedimientos adaptadas a cada centro donde operen equipos de radiación.</h2>
 	<h2>5.2 Entrenamiento o práctica clínica sobre el uso y manipulación de los equipos.</h2>

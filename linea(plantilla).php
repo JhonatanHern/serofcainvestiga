@@ -23,7 +23,7 @@
 	</p>
 	<figure>
 		<img src="imgs/logoplain.svg">
-		<figcaption>A rabid unicorn goring a fairy.</figcaption>
+		<figcaption></figcaption>
 	</figure>
 	<h2>Proyectos:</h2>
 	<ul>

@@ -18,7 +18,7 @@
 	</div>
 		<figure>
 			<img src="l/1.png">
-		<figcaption>A rabid unicorn goring a fairy.</figcaption>
+		<figcaption></figcaption>
 	</figure>
 	<h2>1.1	Diseño de guías clínicas diagnósticas justificadas para la selección de estudios imagenológicos.:</h2>
 	<ul>
