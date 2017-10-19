@@ -1,0 +1,76 @@
+*{
+	transition-duration: 1s;
+	box-sizing: border-box;
+	max-width: 100vw;
+}
+body{
+	margin: 0;
+	perspective: 1000px;
+}
+body > section{
+	display: none;
+	min-height: 100vh;
+	width: 100vw;
+	animation: load 1s;
+	background-color: silver;
+	background-image: url('https://3.bp.blogspot.com/-jQz4nrHbCMQ/UCvF4J50J5I/AAAAAAAAHYw/kOt-TaEf05E/s1600/Galaxy+Wallpapers+4.jpg');
+	background-blend-mode: luminosity;
+}
+@keyframes load{
+	from{transform:translateX(5vw);opacity: 0}
+	to{transform:translateX(0px);opacity: 1}
+}
+.login section{
+	position: absolute;
+	max-height: 100vh;
+	max-width: 100vw;
+	background-color: rgba(255,255,255,.6);
+	padding: 2em;
+	top: 50vh;
+	left: 50vw;
+	transform: translate(-50%,-50%);
+}
+.login section *{
+	font-size: 1.4em;
+	border: none;
+	background-color: white;
+	border-radius: 2px;
+}
+button{cursor: pointer}
+@media(min-width: 700px){
+	.login{
+		perspective: 1000px;
+	}
+	.login:hover section{
+		transform: rotateZ(0deg) translate(-50%,-50%);
+	}
+	.login section{
+		transform: translate(-50%,-50%) rotateY(40deg);
+	}
+	.login section:hover *{
+		font-size: 1.6em;
+	}
+	#pickForm{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-around;
+	}
+	#pickForm button{
+		width: 35vw;
+		font-size: 2.3em;
+	}
+}
+@media(max-width: 699px){
+	#pickForm{
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-around;
+		flex-direction: column;
+	}
+	#pickForm button{
+		width: 80vw;
+		font-size: 1.3em;
+	}
+}
