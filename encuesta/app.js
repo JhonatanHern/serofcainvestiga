@@ -12,7 +12,7 @@ $(document).ready(function() {
 			alert('escribe tu contraseña')
 			return
 		}
-		var data = {
+		$.ajax({
 			url:'login.php',
 			data:`email=${encodeURI($('#mail').val())}&password=${encodeURI($('#pw').val())}`,
 			type:"POST",
@@ -25,7 +25,12 @@ $(document).ready(function() {
 				$('#password').css('display','none')
 				$('#pickForm').css('display','flex')
 			}
-		}
-		$.ajax(data)
+		})
+	})
+	$('#pickForm button').click(function() {
+		let flag = $(this).text()
+		let form = Array.from(document.getElementsByClassName('form')).filter(e=>e.getAttribute('app-name')===flag)[0]
+		$('#pickForm').css('display','none')
+		form.style['display'] = 'block'
 	})
 })
