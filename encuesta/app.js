@@ -46,9 +46,13 @@ $(document).ready(function() {
 		dictionary[selectId](Number(this.value))
 	}
 	bid('radiologia-num').addEventListener('change',updateSize)
-	bid('radiologia-num').addEventListener('keyup',updateSize)
+	bid('radiologia-num').addEventListener('keyup' ,updateSize)
 	bid('mamografia-num').addEventListener('change',updateSize)
-	bid('mamografia-num').addEventListener('keyup',updateSize)
+	bid('mamografia-num').addEventListener('keyup' ,updateSize)
+	bid('tomografia-num').addEventListener('change',updateSize)
+	bid('tomografia-num').addEventListener('keyup' ,updateSize)
+	bid('radiologia-dental-num').addEventListener('change',updateSize)
+	bid('radiologia-dental-num').addEventListener('keyup' ,updateSize)
 		
 	let dictionary = {
 		'radiologia':function (cantFields) {
@@ -239,6 +243,153 @@ $(document).ready(function() {
 								<option value='p'>Promedio</option>
 							</select>
 						</td>
+						<td><input type="text" maxlength='20' name="nombre_apellido_tec${i}"></td>
+						<td>
+							<select name="turno${i}">
+								<option value='m'>Mañana</option>
+								<option value='t'>Tarde</option>
+								<option value='n'>Noche</option>
+							</select>
+						</td>
+					</tr>
+				`
+			}
+			table.innerHTML = result
+		},
+		'tomografia':function (cantFields) {
+			let table = bid('tomografia'),
+				result = ''
+			for (var i = cantFields - 1; i >= 0; i--) {
+				result += `
+					<tr>
+						<td>
+							<select name="pais${i}">
+								<option value="Venezuela">Venezuela</option>
+								<option value="Brasil">Brasil</option>
+								<option value="España">España</option>
+								<option value="Mexico">Mexico</option>
+								<option value="Chile">Chile</option>
+								<option value="Colombia">Colombia</option>
+								<option value="Estados Unidos">Estados Unidos</option>
+								<option value="Canadá">Canadá</option>
+								<option value="Australia">Australia</option>
+							</select>
+						</td>
+						<td><input type="text" name="nombre_inst${i}" maxlength='30'></td>
+						<td>
+							<select name="tipo_inst${i}">
+								<option value="u">Pública</option>
+								<option value="i">Privada</option>
+							</select>
+						</td>
+						<td><input type="" name="marca${i}" maxlength="15"></td>
+						<td><input type="" name="modelo${i}" maxlength="15"></td>
+						<td><input type="" name="nserial${i}" maxlength="12"></td>
+						<td><input type="" name="fecha_tubo${i}" maxlength="8" placeholder="aaaa/mm/dd"></td>
+						<td><input type="" name="sala${i}" maxlength="10"></td>
+						<td><input type="number" name="n_cortes${i}" min="0"></td>
+						<td><input type="number" name="pacientes_atendidos${i}" min='0'></td>
+						<td>
+							<select name="sexo${i}">
+								<option value='f'>Mujer</option>
+								<option value='m'>Hombre</option>
+							</select>
+						</td>
+						<td><input type="number" name="peso${i}" min='0'></td>
+						<td><input type="number" name="altura${i}" min='0'></td>
+						<td><input type="number" name="edad${i}" min='0'></td>
+						<td><input name="fecha_adquisicion_de_data${i}" maxlength="8" placeholder="aaaa/mm/dd"></td>
+						<td><input type="text" maxlength='3' name="kv${i}"></td>
+						<td><input type="text" maxlength='3' name="ma${i}"></td>
+						<td><input type="text" maxlength='4' name="s${i}"></td>
+						<td><input type="text" maxlength='4' name="mas${i}"></td>
+						<td><input type="text" maxlength='4' name="longitud_exploracion${i}"></td>
+						<td><input type="text" maxlength='3' name="pitch${i}"></td>
+						<td><input type="text" maxlength='5' name="ctdi_vol${i}"></td>
+						<td><input type="text" maxlength='5' name="dlp${i}"></td>
+						<td><input type="text" maxlength='5' name="dlp_total${i}"></td>
+						<td><input type="text" maxlength='6' name="dosis${i}"></td>
+						<td><input type="text" maxlength='20' name="nombre_apellido_tec${i}"></td>
+						<td>
+							<select name="turno${i}">
+								<option value='m'>Mañana</option>
+								<option value='t'>Tarde</option>
+								<option value='n'>Noche</option>
+							</select>
+						</td>
+					</tr>
+				`
+			}
+			table.innerHTML = result
+		},
+		'radiologia-dental':function (cantFields) {
+			let table = bid('radiologia-dental'),
+				result = ''
+			for (var i = cantFields - 1; i >= 0; i--) {
+				result += `
+					<tr>
+						<td>
+							<select name="pais${i}">
+								<option value="Venezuela">Venezuela</option>
+								<option value="Brasil">Brasil</option>
+								<option value="España">España</option>
+								<option value="Mexico">Mexico</option>
+								<option value="Chile">Chile</option>
+								<option value="Colombia">Colombia</option>
+								<option value="Estados Unidos">Estados Unidos</option>
+								<option value="Canadá">Canadá</option>
+								<option value="Australia">Australia</option>
+							</select>
+						</td>
+						<td><input type="text" name="nombre_inst${i}" maxlength='30'></td>
+						<td>
+							<select name="tipo_inst${i}">
+								<option value="u">Pública</option>
+								<option value="i">Privada</option>
+							</select>
+						</td>
+						<td><input type="" name="marca${i}" maxlength="15"></td>
+						<td><input type="" name="modelo${i}" maxlength="15"></td>
+						<td><input type="" name="nserial${i}" maxlength="12"></td>
+						<td><input type="" name="fecha_tubo${i}" maxlength="8" placeholder="aaaa/mm/dd"></td>
+						<td><input type="" name="sala${i}" maxlength="10"></td>
+						<td>
+							<select name="tipo_equipo${i}">
+								<option value='a'>Analógico</option>
+								<option value='d'>Digital</option>
+							</select>
+						</td>
+						<td>
+							<select name="revelado${i}">
+								<option value='h'>Húmedo</option>
+								<option value='o'>Digitalizado CR</option>
+								<option value='l'>Digital CR</option>
+							</select>
+						</td>
+						<td><input type="text" name="marca_revelado${i}" maxlength="15"></td>
+						<td><input type="text" name="modelo_revelado${i}" maxlength="15"></td>
+						<td><input type="number" name="pacientes_atendidos${i}" min='0'></td>
+						<td>
+							<select name="sexo${i}">
+								<option value='f'>Mujer</option>
+								<option value='m'>Hombre</option>
+							</select>
+						</td>
+						<td><input type="number" name="peso${i}" min='0'></td>
+						<td><input type="number" name="altura${i}" min='0'></td>
+						<td><input type="number" name="edad${i}" min='0'></td>
+						<td><input name="fecha_adquisicion_de_data${i}" maxlength="8" placeholder="aaaa/mm/dd"></td>
+						<td>
+							<select name="posicion_paciente${i}">
+								<option value='s'>Sentado</option>
+								<option value='p'>De Pie</option>
+							</select>
+						</td>
+						<td><input type="text" maxlength='3' name="kv${i}"></td>
+						<td><input type="text" maxlength='3' name="ma${i}"></td>
+						<td><input type="text" maxlength='4' name="t${i}"></td>
+						<td><input type="text" maxlength='4' name="mas${i}"></td>
+						<td><input type="text" maxlength='6' name="dosis${i}"></td>
 						<td><input type="text" maxlength='20' name="nombre_apellido_tec${i}"></td>
 						<td>
 							<select name="turno${i}">

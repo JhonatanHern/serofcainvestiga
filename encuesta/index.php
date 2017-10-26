@@ -36,16 +36,10 @@
 		<?php include 'fmamografia.php'; ?>
 	</section>
 	<section class="form" app-name="Tomografía">
-		<form>
-			<h3>Tomografía</h3>
-			<input type="submit">
-		</form>
+		<?php include 'ftomografia.php'; ?>
 	</section>
 	<section class="form" app-name="Radiología Dental">
-		<form>
-			<h3>Radiología Dental</h3>
-			<input type="submit">
-		</form>
+		<?php include 'fradent.php'; ?>
 	</section>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="app.js"></script>
