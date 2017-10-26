@@ -30,66 +30,20 @@
 		<button>Radiología Dental</button>
 	</section>
 	<section class="form" app-name="Radiología">
-		<form>
-			<h3>Radiología</h3>
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<textarea></textarea>
-			<input type="submit">
-		</form>
+		<?php include 'fradiologia.php'; ?>
 	</section>
 	<section class="form" app-name="Mamografía">
-		<form>
-			<h3>Mamografía</h3>
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<textarea></textarea>
-			<input type="submit">
-		</form>
+		<?php include 'fmamografia.php'; ?>
 	</section>
 	<section class="form" app-name="Tomografía">
 		<form>
 			<h3>Tomografía</h3>
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<textarea></textarea>
 			<input type="submit">
 		</form>
 	</section>
 	<section class="form" app-name="Radiología Dental">
 		<form>
 			<h3>Radiología Dental</h3>
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<input type="text" name="example">
-			<textarea></textarea>
 			<input type="submit">
 		</form>
 	</section>
