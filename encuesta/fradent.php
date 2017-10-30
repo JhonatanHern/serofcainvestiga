@@ -1,4 +1,4 @@
-<form method="GET">
+<form action="radent.php" method="GET">
 	<h3>Radiología Dental</h3>
 	<div>
 		Cantidad a registrar:

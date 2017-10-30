@@ -1,4 +1,4 @@
-<form method="GET">
+<form action="radiologia.php" method="GET">
 	<h3>Radiología</h3>
 	<div>
 		Cantidad a registrar:

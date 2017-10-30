@@ -1,4 +1,4 @@
-<form method="GET">
+<form action="tomografia.php" method="GET">
 	<h3>Tomografía</h3>
 	<div>
 		Cantidad a registrar:

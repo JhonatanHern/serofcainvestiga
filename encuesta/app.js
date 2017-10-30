@@ -53,7 +53,12 @@ $(document).ready(function() {
 	bid('tomografia-num').addEventListener('keyup' ,updateSize)
 	bid('radiologia-dental-num').addEventListener('change',updateSize)
 	bid('radiologia-dental-num').addEventListener('keyup' ,updateSize)
-		
+	
+	$('form').submit(function(e) {
+		e.preventDefault()
+		alert(this.getAttribute('action'))
+	})
+
 	let dictionary = {
 		'radiologia':function (cantFields) {
 			let table = bid('radiologia'),
