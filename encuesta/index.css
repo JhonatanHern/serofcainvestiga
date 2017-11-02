@@ -18,6 +18,19 @@ body > section{
 	background-image: url('https://3.bp.blogspot.com/-jQz4nrHbCMQ/UCvF4J50J5I/AAAAAAAAHYw/kOt-TaEf05E/s1600/Galaxy+Wallpapers+4.jpg');
 	background-blend-mode: luminosity;
 }
+body > section > i{
+	position: absolute;
+	top: 0;
+	left: 100%;
+	transform: translateX(-100%);
+	background-color: white;
+	border: 1px solid silver;
+	padding: .5em;
+	padding-top: 0em;
+	padding-bottom: .2em;
+	font-size: 2em;
+	cursor: pointer;
+}
 @keyframes load{
 	from{transform:translateX(5vw);opacity: 0}
 	to{transform:translateX(0px);opacity: 1}

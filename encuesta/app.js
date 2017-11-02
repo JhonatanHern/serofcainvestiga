@@ -56,7 +56,18 @@ $(document).ready(function() {
 	
 	$('form').submit(function(e) {
 		e.preventDefault()
-		alert(this.getAttribute('action'))
+		let target = this.getAttribute('action')
+		$.ajax(target,{
+			method:'POST',
+			data:$(this).serialize()+`&email=${encodeURI($('#mail').val())}&password=${encodeURI($('#pw').val())}`
+		}).done(function(res) {
+			console.log( res )
+			alert('datos enviados exitosamente')
+			$('body > section').css('display','none')
+			$('#pickForm').css('display','flex')
+		}).fail(function() {
+			alert( "error" )
+		})
 	})
 
 	let dictionary = {
